@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Simple HTML</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- LOAD Tone.js from unpkg -->
+	</head>
+	<body>
+		<script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+		<script src="index.js"></script>
+		<scrip src='button.js'></scrip>
+		<h1>Ear Training :D</h1>
+		<div>
+		<button type="button" id="btn1" onclick="playNote();btnDisable();"><strong>Generate new Notes</strong></button>
+		<button type="button"id="btn2" onclick="playAgain();btnDisable();"><strong>Hear Again</strong></buton>
+		</div>
+		<div class="text">
+			<p id='firstNote'> </p>
+		</div>
+
+		<style>
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f9f9f9;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  padding: 12px 16px;
+			  z-index: 1;
+			}
+			
+			.dropdown:hover .dropdown-content {
+			  display: block;
+			}
+			</style>
+			
+			<div class="dropdown">
+			  <span>Hover me to open Notes Menu</span>
+			  <div class="dropdown-content">
+				<button id='dropdown0' onclick="userInput('C4');">C</button>
+				<button id='dropdown1' onclick="userInput('C#4');">C#</button>
+				<button id='dropdown2' onclick="userInput('D4');">D</button>
+				<button id='dropdown3' onclick="userInput('D#4');">D#</button>
+				<button id='dropdown4' onclick="userInput('E4');">E</button>
+				<button id='dropdown5' onclick="userInput('F4');">F</button>
+				<button id='dropdown6' onclick="userInput('F#4');">F#</button>
+				<button id='dropdown7' onclick="userInput('G4');">G</button>
+				<button id='dropdown8' onclick="userInput('G#4');">G#</button>
+				<button id='dropdown9' onclick="userInput('A4');">A</button>
+				<button id='dropdown10' onclick="userInput('A#4');">A#</button>
+			  </div>
+			</div>
+
+
+	</body>
+</html>
