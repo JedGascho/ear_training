@@ -9,8 +9,8 @@
 	<body>
 		<h1>Ear Training :D</h1>
 		<div>
-		<button type="button" id="btn1" onclick="enable();playNote();btnDisable(2300);"><strong>Generate new Notes</strong></button>
-		<button type="button"id="btn2" onclick="playAgain();btnDisable(2300);"><strong>Hear Again</strong></buton>
+		<button type="button" id="btn1" onclick="enable();playNote();btnDisable(2300, 1);"><strong>Generate new Notes</strong></button>
+		<button type="button"id="btn2" onclick="playAgain();btnDisable(2300, 1);"><strong>Hear Again</strong></buton>
 		</div>
 		<div class="text">
 			<p id='firstNote'><br></p>
@@ -34,8 +34,8 @@
 
 		<h1>Chord Differences</h1>
 		<h2>Listen to different tones with <br>different types of tuning.</h2>
-		<button type="button" id="equalTemp" onclick="playChord(261.63, 329.63, 392.00);btnDisable(3100);"><strong>Equal Temperment</strong></button>
-		<button type="button" id="meanTemp" onclick="playChord(260.29, 330.28, 390.61);btnDisable(3100);"><strong>Mean Tone</strong></button>
+		<button type="button" id="equalTemp" onclick="playChord(261.63, 329.63, 392.00);btnDisable(3100, 0);"><strong>Equal Temperment</strong></button>
+		<button type="button" id="meanTemp" onclick="playChord(261.63, 327.03, 727);btnDisable(3100, 0);"><strong>Mean Tone</strong></button>
 
 		<script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
 		<script src="ear_trainer.js"></script>
