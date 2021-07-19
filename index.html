@@ -33,9 +33,18 @@
 		<h3>-----------------------------------------------------------</h3>
 
 		<h1>Chord Differences</h1>
-		<h2>Listen to different tones with <br>different types of tuning.</h2>
-		<button type="button" id="equalTemp" onclick="playChord(261.63, 329.63, 392.00);btnDisable(3100, 0);"><strong>Equal Temperment</strong></button>
-		<button type="button" id="meanTemp" onclick="playChord(261.63, 327.03, 727);btnDisable(3100, 0);"><strong>Mean Tone</strong></button>
+		<h4>Listen to different tones with different types of tuning.</h4>
+		<button type="button" id="equalTempC#M" onclick="playChord(277.18, 369.99, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>C#M<br>-------<br>466.16<br>369.99<br>277.18</strong></button>
+		<button type="button" id="meanTempC#M" onclick="playChord(273.37, 365.62, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>C#M<br>-------<br>468.02<br>365.62<br>273.37</strong></button>
+		<button type="button" id="werckmeisterTempC#M" onclick="playChord(275.62, 367.51, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>C#M<br>-------<br>465.12<br>367.51<br>265.62</strong></button>
+		<button type="button" id="pythagoreanTempC#M" onclick="playChord(279.39, 372.52, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>C#M<br>-------<br>465.12<br>372.52<br>279.39</strong></button>
+		<button type="button" id="justMajorTempC#M" onclick="playChord(272.54, 367.92, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>C#M<br>-------<br>470.93<br>367.92<br>272.54</strong></button>
+		<br><br>
+		<button type="button" id="equalTempC#m" onclick="playChord(277.18, 349.23, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>C#m<br>-------<br>466.16<br>349.23<br>277.18</strong></button>
+		<button type="button" id="meanTempC#m" onclick="playChord(273.37, 349.92, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>C#m<br>-------<br>468.02<br>349.92<br>273.37</strong></button>
+		<button type="button" id="werckmeisterTempC#m" onclick="playChord(275.62, 348.83, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>C#m<br>-------<br>465.12<br>348.83<br>265.62</strong></button>
+		<button type="button" id="pythagoreanTempC#m" onclick="playChord(279.39, 348.83, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>C#m<br>-------<br>465.12<br>348.83<br>279.39</strong></button>
+		<button type="button" id="justMajorTempC#m" onclick="playChord(272.54, 348.83, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>C#m<br>-------<br>470.93<br>348.83<br>272.54</strong></button>
 
 		<script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
 		<script src="ear_trainer.js"></script>
