@@ -26,10 +26,12 @@ var osc2 = null;
 const merge = new Tone.Merge().toDestination();
 var note1 = null;
 var note2 = null;
+var j = null;
 
 
 // Plays and creates two notes
 playNote = function () {
+    j = 0
     try {
         osc.stop();
         osc2.stop();
@@ -117,6 +119,22 @@ btnDisable = function(wait, x) {
             document.getElementById('dropdown8').removeAttribute('disabled');
             document.getElementById('dropdown9').removeAttribute('disabled');
             document.getElementById('dropdown10').removeAttribute('disabled');
+        } else if (j == 0) {
+            document.getElementById('btn1').removeAttribute('disabled');
+            document.getElementById('equalTemp').removeAttribute('disabled');
+            document.getElementById('meanTemp').removeAttribute('disabled');
+            document.getElementById('btn2').removeAttribute('disabled');
+            document.getElementById('dropdown0').removeAttribute('disabled');
+            document.getElementById('dropdown1').removeAttribute('disabled');
+            document.getElementById('dropdown2').removeAttribute('disabled');
+            document.getElementById('dropdown3').removeAttribute('disabled');
+            document.getElementById('dropdown4').removeAttribute('disabled');
+            document.getElementById('dropdown5').removeAttribute('disabled');
+            document.getElementById('dropdown6').removeAttribute('disabled');
+            document.getElementById('dropdown7').removeAttribute('disabled');
+            document.getElementById('dropdown8').removeAttribute('disabled');
+            document.getElementById('dropdown9').removeAttribute('disabled');
+            document.getElementById('dropdown10').removeAttribute('disabled');
         }
     }, wait)
 }
@@ -141,6 +159,7 @@ userInput = function(note) {
             document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
             document.getElementById('btn2').setAttribute('disabled', 'disabled');
             document.getElementById('firstNote').innerHTML = "​​​ "
+            j = null;
 
         }
         
@@ -149,10 +168,7 @@ userInput = function(note) {
     }
 }
 
-var k = 0;
-
 function enable() {
-    k = 1
     document.getElementById('dropdown0').removeAttribute('disabled');
     document.getElementById('dropdown1').removeAttribute('disabled');
     document.getElementById('dropdown2').removeAttribute('disabled');
