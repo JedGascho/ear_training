@@ -1,5 +1,18 @@
-// Used for synth input
+//Make all buttons in the ear training sectino disabled until notes are generated
+document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown1').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown2').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown3').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown4').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown5').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown6').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown7').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown8').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
+document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
+document.getElementById('btn2').setAttribute('disabled', 'disabled');
 
+// Used for synth input
 var noteValue = ["C4", "C#4", "D4", "D#4", "E4", "F4", "F#4", "G4", "G#4", "A4", "A#4"]
 
 var noteValueFreq = {
@@ -71,7 +84,7 @@ function getRandomInt(min, max, note) {
 }
 
 // Disables buttons when sounds are playing
-btnDisable = function(wait) {
+btnDisable = function(wait, x) {
     document.getElementById('btn1').setAttribute('disabled', 'disabled');
     document.getElementById('btn2').setAttribute('disabled', 'disabled');
     document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
@@ -89,20 +102,22 @@ btnDisable = function(wait) {
     document.getElementById('meanTemp').setAttribute('disabled', 'disabled');
     setTimeout(function(){
         document.getElementById('btn1').removeAttribute('disabled');
-        document.getElementById('btn2').removeAttribute('disabled');
-        document.getElementById('dropdown0').removeAttribute('disabled');
-        document.getElementById('dropdown1').removeAttribute('disabled');
-        document.getElementById('dropdown2').removeAttribute('disabled');
-        document.getElementById('dropdown3').removeAttribute('disabled');
-        document.getElementById('dropdown4').removeAttribute('disabled');
-        document.getElementById('dropdown5').removeAttribute('disabled');
-        document.getElementById('dropdown6').removeAttribute('disabled');
-        document.getElementById('dropdown7').removeAttribute('disabled');
-        document.getElementById('dropdown8').removeAttribute('disabled');
-        document.getElementById('dropdown9').removeAttribute('disabled');
-        document.getElementById('dropdown10').removeAttribute('disabled');
         document.getElementById('equalTemp').removeAttribute('disabled');
         document.getElementById('meanTemp').removeAttribute('disabled');
+        if (x == 1) {
+            document.getElementById('btn2').removeAttribute('disabled');
+            document.getElementById('dropdown0').removeAttribute('disabled');
+            document.getElementById('dropdown1').removeAttribute('disabled');
+            document.getElementById('dropdown2').removeAttribute('disabled');
+            document.getElementById('dropdown3').removeAttribute('disabled');
+            document.getElementById('dropdown4').removeAttribute('disabled');
+            document.getElementById('dropdown5').removeAttribute('disabled');
+            document.getElementById('dropdown6').removeAttribute('disabled');
+            document.getElementById('dropdown7').removeAttribute('disabled');
+            document.getElementById('dropdown8').removeAttribute('disabled');
+            document.getElementById('dropdown9').removeAttribute('disabled');
+            document.getElementById('dropdown10').removeAttribute('disabled');
+        }
     }, wait)
 }
 
@@ -111,7 +126,7 @@ userInput = function(note) {
     if (note === noteValue[note2]) {
         if (confirm('Nice Work!, play again?')) {
             playNote();
-            btnDisable(3200);
+            btnDisable(2300, 1);
         } else {
             document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
             document.getElementById('dropdown1').setAttribute('disabled', 'disabled');
@@ -132,4 +147,22 @@ userInput = function(note) {
     } else {
         alert('Not Quite')
     }
+}
+
+var k = 0;
+
+function enable() {
+    k = 1
+    document.getElementById('dropdown0').removeAttribute('disabled');
+    document.getElementById('dropdown1').removeAttribute('disabled');
+    document.getElementById('dropdown2').removeAttribute('disabled');
+    document.getElementById('dropdown3').removeAttribute('disabled');
+    document.getElementById('dropdown4').removeAttribute('disabled');
+    document.getElementById('dropdown5').removeAttribute('disabled');
+    document.getElementById('dropdown6').removeAttribute('disabled');
+    document.getElementById('dropdown7').removeAttribute('disabled');
+    document.getElementById('dropdown8').removeAttribute('disabled');
+    document.getElementById('dropdown9').removeAttribute('disabled');
+    document.getElementById('dropdown10').removeAttribute('disabled');
+    document.getElementById('btn2').removeAttribute('disabled');
 }
