@@ -100,12 +100,28 @@ btnDisable = function(wait, x) {
     document.getElementById('dropdown8').setAttribute('disabled', 'disabled');
     document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
     document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
-    document.getElementById('equalTemp').setAttribute('disabled', 'disabled');
-    document.getElementById('meanTemp').setAttribute('disabled', 'disabled');
+    document.getElementById('equalTempC#M').setAttribute('disabled', 'disabled');
+    document.getElementById('meanTempC#M').setAttribute('disabled', 'disabled');
+    document.getElementById('werckmeisterTempC#M').setAttribute('disabled', 'disabled');
+    document.getElementById('pythagoreanTempC#M').setAttribute('disabled', 'disabled');
+    document.getElementById('justMajorTempC#M').setAttribute('disabled', 'disabled');
+    document.getElementById('equalTempC#m').setAttribute('disabled', 'disabled');
+    document.getElementById('meanTempC#m').setAttribute('disabled', 'disabled');
+    document.getElementById('werckmeisterTempC#m').setAttribute('disabled', 'disabled');
+    document.getElementById('pythagoreanTempC#m').setAttribute('disabled', 'disabled');
+    document.getElementById('justMajorTempC#m').setAttribute('disabled', 'disabled');
     setTimeout(function(){
         document.getElementById('btn1').removeAttribute('disabled');
-        document.getElementById('equalTemp').removeAttribute('disabled');
-        document.getElementById('meanTemp').removeAttribute('disabled');
+        document.getElementById('equalTempC#M').removeAttribute('disabled');
+        document.getElementById('meanTempC#M').removeAttribute('disabled');
+        document.getElementById('werckmeisterTempC#M').removeAttribute('disabled');
+        document.getElementById('pythagoreanTempC#M').removeAttribute('disabled');
+        document.getElementById('justMajorTempC#M').removeAttribute('disabled');
+        document.getElementById('equalTempC#m').removeAttribute('disabled');
+        document.getElementById('meanTempC#m').removeAttribute('disabled');
+        document.getElementById('werckmeisterTempC#m').removeAttribute('disabled');
+        document.getElementById('pythagoreanTempC#m').removeAttribute('disabled');
+        document.getElementById('justMajorTempC#m').removeAttribute('disabled');
         if (x == 1) {
             document.getElementById('btn2').removeAttribute('disabled');
             document.getElementById('dropdown0').removeAttribute('disabled');
@@ -121,8 +137,16 @@ btnDisable = function(wait, x) {
             document.getElementById('dropdown10').removeAttribute('disabled');
         } else if (j == 0) {
             document.getElementById('btn1').removeAttribute('disabled');
-            document.getElementById('equalTemp').removeAttribute('disabled');
-            document.getElementById('meanTemp').removeAttribute('disabled');
+            document.getElementById('equalTempC#M').removeAttribute('disabled');
+            document.getElementById('meanTempC#M').removeAttribute('disabled');
+            document.getElementById('werckmeisterTempC#M').removeAttribute('disabled');
+            document.getElementById('pythagoreanTempC#M').removeAttribute('disabled');
+            document.getElementById('justMajorTempC#M').removeAttribute('disabled');
+            document.getElementById('equalTempC#m').removeAttribute('disabled');
+            document.getElementById('meanTempC#m').removeAttribute('disabled');
+            document.getElementById('werckmeisterTempC#m').removeAttribute('disabled');
+            document.getElementById('pythagoreanTempC#m').removeAttribute('disabled');
+            document.getElementById('justMajorTempC#m').removeAttribute('disabled');
             document.getElementById('btn2').removeAttribute('disabled');
             document.getElementById('dropdown0').removeAttribute('disabled');
             document.getElementById('dropdown1').removeAttribute('disabled');
@@ -182,3 +206,4 @@ function enable() {
     document.getElementById('dropdown10').removeAttribute('disabled');
     document.getElementById('btn2').removeAttribute('disabled');
 }
+
