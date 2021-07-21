@@ -182,7 +182,7 @@ userInput = function(note) {
             document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
             document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
             document.getElementById('btn2').setAttribute('disabled', 'disabled');
-            document.getElementById('firstNote').innerHTML = "​​​ "
+            document.getElementById('firstNote').innerHTML = " "
             j = null;
 
         }
