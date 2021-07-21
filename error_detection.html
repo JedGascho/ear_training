@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="images" src="https://github.com/JedGascho/ear_training/blob/main/note_images/Treble%20clef.png?raw=true" width=166 height=256>
+    <img class="images" id=note1>
+    <img class="images" id=note2>
+    <br>
+    <button class="btn" type="button" onClick="playNotes(0);" id="play"><strong>Play</strong></button>
+    <button class="btn" type="button" onClick="playNotes(1);" id ="playAgain"><strong>Hear Again</strong></button>
+    
+    <!-- <a id="note1"> </p><br>
+    <p id="note2"> </p> -->
+    <button class="btn" type="button" onclick="checkAnswer(0)" id=match><strong>Match</strong></button>
+    <button class="btn" type="button" onclick="checkAnswer(1)" id=notMatch><strong>Doesn't Match</strong></button>
+    <br>
+    <h3>-----------------------------------------------------------</h3>
+    <a class="errorDetect" href="index.html"><strong>Home</strong></a>
+    <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+    <script src="error_detection.js"></script>
+</body>
+</html>
