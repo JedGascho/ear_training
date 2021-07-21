@@ -5,50 +5,59 @@
 		<title>Music</title>
 		<link rel="shortcut icon" type="image/jpg" href="https://raw.githubusercontent.com/JedGascho/ear_training/main/favicon.ico"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Ear Training :D</h1>
 		<div>
-		<button type="button" id="btn1" onclick="enable();playNote();btnDisable(2300, 1);"><strong>Generate new Notes</strong></button>
-		<button type="button"id="btn2" onclick="playAgain();btnDisable(2300, 1);"><strong>Hear Again</strong></buton>
+		<h1>Ear Training :D</h1> 
+		</div>
+		
+		<div>
+		<button class="btn" type="button" id="btn1" onclick="enable();playNote();btnDisable(2300, 1);"><strong>Generate new Notes</strong></button>
+		<button class="btn" type="button"id="btn2" onclick="playAgain();btnDisable(2300, 1);"><strong>Hear Again</strong></buton>
 		</div>
 		<div class="text">
-			<p id='firstNote'><br></p>
+			<h4 id='firstNote'><br></h4>
 		</div>
 			
 
-		<button id='dropdown0' onclick="userInput('C4');">C</button>
-		<button id='dropdown1' onclick="userInput('C#4');">C#/Db</button>
-		<button id='dropdown2' onclick="userInput('D4');">D</button>
-		<button id='dropdown3' onclick="userInput('D#4');">D#/Eb</button>
-		<button id='dropdown4' onclick="userInput('E4');">E</button>
-		<button id='dropdown5' onclick="userInput('F4');">F</button>
-		<button id='dropdown6' onclick="userInput('F#4');">F#/Gb</button>
-		<button id='dropdown7' onclick="userInput('G4');">G</button>
-		<button id='dropdown8' onclick="userInput('G#4');">G#/Ab</button>
-		<button id='dropdown9' onclick="userInput('A4');">A</button>
-		<button id='dropdown10' onclick="userInput('A#4');">A#/Bb</button>
+		<button class="btn" id='dropdown0' onclick="userInput('C4');"><strong>C</strong></button>
+		<button class="btn" id='dropdown1' onclick="userInput('C#4');"><strong>C#/Db</strong>></button>
+		<button class="btn" id='dropdown2' onclick="userInput('D4');"><strong>D</strong></button>
+		<button class="btn" id='dropdown3' onclick="userInput('D#4');"><strong>D#/Eb</strong>></button>
+		<button class="btn" id='dropdown4' onclick="userInput('E4');"><strong>E</strong></button>
+		<br>
+		<button class="btn" id='dropdown5' onclick="userInput('F4');"><strong>F</strong></button>
+		<button class="btn" id='dropdown6' onclick="userInput('F#4');"><strong>F#/Gb</strong>></button>
+		<button class="btn" id='dropdown7' onclick="userInput('G4');"><strong>G</strong></button>
+		<button class="btn" id='dropdown8' onclick="userInput('G#4');"><strong>G#/Ab</strong>></button>
+		<button class="btn" id='dropdown9' onclick="userInput('A4');"><strong>A</strong></button>
+		<br>
+		<button class="btn" id='dropdown10' onclick="userInput('A#4');"><strong>A#/Bb</strong>></button>
 
 
 		<h3>-----------------------------------------------------------</h3>
 
 		<h1>Chord Differences</h1>
 		<h4>Listen to different tones with different types of tuning.</h4>
-		<button type="button" id="equalTempC#M" onclick="playChord(277.18, 369.99, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>C#M<br>-------<br>466.16<br>369.99<br>277.18</strong></button>
-		<button type="button" id="meanTempC#M" onclick="playChord(273.37, 365.62, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>C#M<br>-------<br>468.02<br>365.62<br>273.37</strong></button>
-		<button type="button" id="werckmeisterTempC#M" onclick="playChord(275.62, 367.51, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>C#M<br>-------<br>465.12<br>367.51<br>265.62</strong></button>
-		<button type="button" id="pythagoreanTempC#M" onclick="playChord(279.39, 372.52, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>C#M<br>-------<br>465.12<br>372.52<br>279.39</strong></button>
-		<button type="button" id="justMajorTempC#M" onclick="playChord(272.54, 367.92, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>C#M<br>-------<br>470.93<br>367.92<br>272.54</strong></button>
+		<button type="button" class="btn" id="equalTempC#M" onclick="playChord(277.18, 369.99, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>Major</strong></button>
+		<button type="button" class="btn" id="meanTempC#M" onclick="playChord(273.37, 365.62, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>Major</strong></button>
+		<button type="button" class="btn" id="werckmeisterTempC#M" onclick="playChord(275.62, 367.51, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>Major</strong></button>
+		<button type="button" class="btn" id="pythagoreanTempC#M" onclick="playChord(279.39, 372.52, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>Major</strong></button>
+		<button type="button" class="btn" id="justMajorTempC#M" onclick="playChord(272.54, 367.92, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>----<br>Major</strong></button>
 		<br><br>
-		<button type="button" id="equalTempC#m" onclick="playChord(277.18, 349.23, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>C#m<br>-------<br>466.16<br>349.23<br>277.18</strong></button>
-		<button type="button" id="meanTempC#m" onclick="playChord(273.37, 349.92, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>C#m<br>-------<br>468.02<br>349.92<br>273.37</strong></button>
-		<button type="button" id="werckmeisterTempC#m" onclick="playChord(275.62, 348.83, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>C#m<br>-------<br>465.12<br>348.83<br>265.62</strong></button>
-		<button type="button" id="pythagoreanTempC#m" onclick="playChord(279.39, 348.83, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>C#m<br>-------<br>465.12<br>348.83<br>279.39</strong></button>
-		<button type="button" id="justMajorTempC#m" onclick="playChord(272.54, 348.83, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>C#m<br>-------<br>470.93<br>348.83<br>272.54</strong></button>
+		<button type="button" class="btn" id="equalTempC#m" onclick="playChord(277.18, 349.23, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>Minor<</strong></button>
+		<button type="button" class="btn" id="meanTempC#m" onclick="playChord(273.37, 349.92, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>Minor</strong></button>
+		<button type="button" class="btn" id="werckmeisterTempC#m" onclick="playChord(275.62, 348.83, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>Minor</strong></button>
+		<button type="button" class="btn" id="pythagoreanTempC#m" onclick="playChord(279.39, 348.83, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>Minor</strong></button>
+		<button type="button" class="btn" id="justMajorTempC#m" onclick="playChord(272.54, 348.83, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>----<br>Minor</strong></button>
+		
+		<br>
+		<h3>-----------------------------------------------------------</h3>
+		<a class = "errorDetect" href="error_detection.html"><strong>Click for Error Detection</strong></a>
 
 		<script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
 		<script src="ear_trainer.js"></script>
 		<script src="chords.js"></script>
-		<script src="misc.js"></script>
 	</body>
 </html>
