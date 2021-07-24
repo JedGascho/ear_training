@@ -1,15 +1,19 @@
+dropdown = ['dropdown0',
+'dropdown1',
+'dropdown2',
+'dropdown3',
+'dropdown4',
+'dropdown5',
+'dropdown6',
+'dropdown7',
+'dropdown8',
+'dropdown9',
+'dropdown10']
+
 //Make all buttons in the ear training sectino disabled until notes are generated
-document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown1').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown2').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown3').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown4').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown5').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown6').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown7').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown8').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
-document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
+for (x in dropdown) {
+    document.getElementById(dropdown[x]).setAttribute('disabled', 'disabled');
+}
 document.getElementById('btn2').setAttribute('disabled', 'disabled');
 
 // Used for synth input
@@ -87,78 +91,24 @@ function getRandomInt(min, max, note) {
 
 // Disables buttons when sounds are playing
 btnDisable = function(wait, x) {
-    document.getElementById('btn1').setAttribute('disabled', 'disabled');
-    document.getElementById('btn2').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown1').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown2').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown3').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown4').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown5').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown6').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown7').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown8').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
-    document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
-    document.getElementById('equalTempC#M').setAttribute('disabled', 'disabled');
-    document.getElementById('meanTempC#M').setAttribute('disabled', 'disabled');
-    document.getElementById('werckmeisterTempC#M').setAttribute('disabled', 'disabled');
-    document.getElementById('pythagoreanTempC#M').setAttribute('disabled', 'disabled');
-    document.getElementById('justMajorTempC#M').setAttribute('disabled', 'disabled');
-    document.getElementById('equalTempC#m').setAttribute('disabled', 'disabled');
-    document.getElementById('meanTempC#m').setAttribute('disabled', 'disabled');
-    document.getElementById('werckmeisterTempC#m').setAttribute('disabled', 'disabled');
-    document.getElementById('pythagoreanTempC#m').setAttribute('disabled', 'disabled');
-    document.getElementById('justMajorTempC#m').setAttribute('disabled', 'disabled');
+    for (x in dropdown) {
+        document.getElementById(dropdown[x]).setAttribute('disabled', 'disabled');
+    }
+    document.getElementById('btn1').setAttribute('disabled', 'disabled')
+    document.getElementById('btn2').setAttribute('disabled', 'disabled')
     setTimeout(function(){
         document.getElementById('btn1').removeAttribute('disabled');
-        document.getElementById('equalTempC#M').removeAttribute('disabled');
-        document.getElementById('meanTempC#M').removeAttribute('disabled');
-        document.getElementById('werckmeisterTempC#M').removeAttribute('disabled');
-        document.getElementById('pythagoreanTempC#M').removeAttribute('disabled');
-        document.getElementById('justMajorTempC#M').removeAttribute('disabled');
-        document.getElementById('equalTempC#m').removeAttribute('disabled');
-        document.getElementById('meanTempC#m').removeAttribute('disabled');
-        document.getElementById('werckmeisterTempC#m').removeAttribute('disabled');
-        document.getElementById('pythagoreanTempC#m').removeAttribute('disabled');
-        document.getElementById('justMajorTempC#m').removeAttribute('disabled');
         if (x == 1) {
+            for (x in dropdown) {
+                document.getElementById(dropdown[x]).setAttribute('disabled', 'disabled');
+            }
             document.getElementById('btn2').removeAttribute('disabled');
-            document.getElementById('dropdown0').removeAttribute('disabled');
-            document.getElementById('dropdown1').removeAttribute('disabled');
-            document.getElementById('dropdown2').removeAttribute('disabled');
-            document.getElementById('dropdown3').removeAttribute('disabled');
-            document.getElementById('dropdown4').removeAttribute('disabled');
-            document.getElementById('dropdown5').removeAttribute('disabled');
-            document.getElementById('dropdown6').removeAttribute('disabled');
-            document.getElementById('dropdown7').removeAttribute('disabled');
-            document.getElementById('dropdown8').removeAttribute('disabled');
-            document.getElementById('dropdown9').removeAttribute('disabled');
-            document.getElementById('dropdown10').removeAttribute('disabled');
         } else if (j == 0) {
             document.getElementById('btn1').removeAttribute('disabled');
-            document.getElementById('equalTempC#M').removeAttribute('disabled');
-            document.getElementById('meanTempC#M').removeAttribute('disabled');
-            document.getElementById('werckmeisterTempC#M').removeAttribute('disabled');
-            document.getElementById('pythagoreanTempC#M').removeAttribute('disabled');
-            document.getElementById('justMajorTempC#M').removeAttribute('disabled');
-            document.getElementById('equalTempC#m').removeAttribute('disabled');
-            document.getElementById('meanTempC#m').removeAttribute('disabled');
-            document.getElementById('werckmeisterTempC#m').removeAttribute('disabled');
-            document.getElementById('pythagoreanTempC#m').removeAttribute('disabled');
-            document.getElementById('justMajorTempC#m').removeAttribute('disabled');
             document.getElementById('btn2').removeAttribute('disabled');
-            document.getElementById('dropdown0').removeAttribute('disabled');
-            document.getElementById('dropdown1').removeAttribute('disabled');
-            document.getElementById('dropdown2').removeAttribute('disabled');
-            document.getElementById('dropdown3').removeAttribute('disabled');
-            document.getElementById('dropdown4').removeAttribute('disabled');
-            document.getElementById('dropdown5').removeAttribute('disabled');
-            document.getElementById('dropdown6').removeAttribute('disabled');
-            document.getElementById('dropdown7').removeAttribute('disabled');
-            document.getElementById('dropdown8').removeAttribute('disabled');
-            document.getElementById('dropdown9').removeAttribute('disabled');
-            document.getElementById('dropdown10').removeAttribute('disabled');
+            for (x in dropdown) {
+                document.getElementById(dropdown[x]).removeAttribute('disabled');
+            }
         }
     }, wait)
 }
@@ -170,19 +120,11 @@ userInput = function(note) {
             playNote();
             btnDisable(2300, 1);
         } else {
-            document.getElementById('dropdown0').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown1').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown2').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown3').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown4').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown5').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown6').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown7').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown8').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown9').setAttribute('disabled', 'disabled');
-            document.getElementById('dropdown10').setAttribute('disabled', 'disabled');
+            for (x in dropdown) {
+                document.getElementById(dropdown[x]).setAttribute('disabled', 'disabled');
+            }
             document.getElementById('btn2').setAttribute('disabled', 'disabled');
-            document.getElementById('firstNote').innerHTML = " "
+            document.getElementById('firstNote').innerHTML = "​​​ "
             j = null;
 
         }
@@ -192,18 +134,11 @@ userInput = function(note) {
     }
 }
 
+// Enables buttons
 function enable() {
-    document.getElementById('dropdown0').removeAttribute('disabled');
-    document.getElementById('dropdown1').removeAttribute('disabled');
-    document.getElementById('dropdown2').removeAttribute('disabled');
-    document.getElementById('dropdown3').removeAttribute('disabled');
-    document.getElementById('dropdown4').removeAttribute('disabled');
-    document.getElementById('dropdown5').removeAttribute('disabled');
-    document.getElementById('dropdown6').removeAttribute('disabled');
-    document.getElementById('dropdown7').removeAttribute('disabled');
-    document.getElementById('dropdown8').removeAttribute('disabled');
-    document.getElementById('dropdown9').removeAttribute('disabled');
-    document.getElementById('dropdown10').removeAttribute('disabled');
+    for (x in dropdown) {
+        document.getElementById(dropdown[x]).removeAttribute('disabled');
+    }
     document.getElementById('btn2').removeAttribute('disabled');
 }
 
