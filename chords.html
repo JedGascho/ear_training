@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chord Differences</h1>
+    <h4>Listen to different tones with different types of tuning.</h4>
+    <h3>-----------------------------------------------------------</h3>
+    <h2>F#</h2>
+    <button type="button" class="btn" id="equalTempF#M" onclick="playChord(277.18, 369.99, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>F# Major</strong></button>
+    <button type="button" class="btn" id="meanTempF#M" onclick="playChord(273.37, 365.62, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>F# Major</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempF#M" onclick="playChord(275.62, 367.51, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>F# Major</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempF#M" onclick="playChord(279.39, 372.52, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>F# Major</strong></button>
+    <button type="button" class="btn" id="justMajorTempF#M" onclick="playChord(272.54, 367.92, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>----<br>F# Major</strong></button>
+    <br><br>
+    <button type="button" class="btn" id="equalTempF#m" onclick="playChord(277.18, 369.99, 440.00);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>F# Minor</strong></button>
+    <button type="button" class="btn" id="meanTempF#m" onclick="playChord(273.37, 365.62, 437.41);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>F# Minor</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempF#m" onclick="playChord(275.62, 367.51, 437.05);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>F# Minor</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempF#m" onclick="playChord(279.39, 372.52, 441.49);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>F# Minor</strong></button>
+    <button type="button" class="btn" id="justMajorTempF#m" onclick="playChord(272.54, 367.92, 436.05);btnDisable(3100, 0);"><strong>Just Major<br>----<br>F# Minor</strong></button>
+
+    <h3>-----------------------------------------------------------</h3>
+    <h2>G</h2>
+    <button type="button" class="btn" id="equalTempGM" onclick="playChord(293.66, 392.00, 493.88);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>G Major</strong></button>
+    <button type="button" class="btn" id="meanTempGM" onclick="playChord(292.50, 391.21, 489.03);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>G Major</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempGM" onclick="playChord(292.37, 391.16, 491.67);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>G Major</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempGM" onclick="playChord(294.33, 392.44, 496.67);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>G Major</strong></button>
+    <button type="button" class="btn" id="justMajorTempGM" onclick="playChord(294.33, 392.44, 490.55);btnDisable(3100, 0);"><strong>Just Major<br>----<br>G Major</strong></button>
+    <br><br>
+    <button type="button" class="btn" id="equalTempGm" onclick="playChord(293.66, 392.00, 466.16);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>G Minor</strong></button>
+    <button type="button" class="btn" id="meanTempGm" onclick="playChord(292.50, 391.21, 468.02);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>G Minor</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempGm" onclick="playChord(292.37, 391.16, 465.12);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>G Minor</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempGm" onclick="playChord(294.33, 392.44, 465.12);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>G Minor</strong></button>
+    <button type="button" class="btn" id="justMajorTempGm" onclick="playChord(294.33, 392.44, 470.93);btnDisable(3100, 0);"><strong>Just Major<br>----<br>G Minor</strong></button>
+
+    <h3>-----------------------------------------------------------</h3>
+    <h2>G#</h2>
+    <button type="button" class="btn" id="equalTempG#M" onclick="playChord(311.13, 415.30, 523.25);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>G# Major</strong></button>
+    <button type="button" class="btn" id="meanTempG#M" onclick="playChord(312.98, 418.60, 523.25);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>G# Major</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempG#M" onclick="playChord(310.08, 413.42, 523.25);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>G# Major</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempG#M" onclick="playChord(310.08, 413.42, 523.25);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>G# Major</strong></button>
+    <button type="button" class="btn" id="justMajorTempG#M" onclick="playChord(313.96, 418.60, 523.25);btnDisable(3100, 0);"><strong>Just Major<br>----<br>G# Major</strong></button>
+    <br><br>
+    <button type="button" class="btn" id="equalTempG#m" onclick="playChord(311.13, 415.30, 493.88);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>G# Minor</strong></button>
+    <button type="button" class="btn" id="meanTempG#m" onclick="playChord(312.98, 418.60, 489.03);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>G# Minor</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempG#m" onclick="playChord(310.08, 413.42, 491.67);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>G# Minor</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempG#m" onclick="playChord(310.08, 413.42, 496.67);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>G# Minor</strong></button>
+    <button type="button" class="btn" id="justMajorTempG#m" onclick="playChord(313.96, 418.60, 490.55);btnDisable(3100, 0);"><strong>Just Major<br>----<br>G# Minor</strong></button>
+
+    <h3>-----------------------------------------------------------</h3>
+    <h2>D</h2>
+    <button type="button" class="btn" id="equalTempDM" onclick="playChord(220.00, 293.66, 369.99);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>D Major</strong></button>
+    <button type="button" class="btn" id="meanTempDM" onclick="playChord(218.71, 292.5, 365.62);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>D Major</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempDM" onclick="playChord(218.53, 292.37, 367.51);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>D Major</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempDM" onclick="playChord(220.75, 294.33, 372.52);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>D Major</strong></button>
+    <button type="button" class="btn" id="justMajorTempDM" onclick="playChord(218.03, 294.33, 367.92);btnDisable(3100, 0);"><strong>Just Major<br>----<br>D Major</strong></button>
+    <br><br>
+    <button type="button" class="btn" id="equalTempDm" onclick="playChord(220.00, 293.66, 349.23);btnDisable(3100, 0);"><strong>Equal Temperment<br>----<br>D Minor<</strong></button>
+    <button type="button" class="btn" id="meanTempDm" onclick="playChord(218.71, 292.5, 349.92);btnDisable(3100, 0);"><strong>Mean Tone<br>----<br>D Minor</strong></button>
+    <button type="button" class="btn" id="werckmeisterTempDm" onclick="playChord(218.53, 292.37, 348.82);btnDisable(3100, 0);"><strong>Werckmeister<br>----<br>D Minor</strong></button>
+    <button type="button" class="btn" id="pythagoreanTempDm" onclick="playChord(220.75, 294.33, 348.83);btnDisable(3100, 0);"><strong>Pythagorean<br>----<br>D Minor</strong></button>
+    <button type="button" class="btn" id="justMajorTempDm" onclick="playChord(218.03, 294.33, 348.83);btnDisable(3100, 0);"><strong>Just Major<br>----<br>D Minor</strong></button>
+    
+    <br>
+    <h3>-----------------------------------------------------------</h3>  
+    <a class="errorDetect" href="index.html"><strong>Home</strong></a>
+    <a class="errorDetect" href="error_detection.html"><strong>Error Detection</strong></a>
+
+    <script src="https://unpkg.com/tone@14.7.77/build/Tone.js"></script>
+    <script src="chords.js"></script>
+</body>
+</html>
